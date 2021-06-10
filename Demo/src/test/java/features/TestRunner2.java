@@ -20,7 +20,7 @@ public class TestRunner2
 		        		.parallel(2);
 		        generateReport(results.getReportDir());
 		        assertTrue(results.getErrorMessages(), results.getFailCount() == 0);
-		        
+		        System.out.println("------Just for practice purpose------");		        
 		    }
 		 public static void generateReport(String karateOutputPath) {        
 		        Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[] {"json"}, true);
