@@ -7,7 +7,7 @@ Feature: Users List-1
   Scenario: User 2 datails
     Given url 'https://reqres.in/api/users?page=2'
     When method GET
-    Then status 400
+    Then status 200
     Then print response
     And match response ==  expOutput1
     Then print 'expectedoutput----------',expOutput1
